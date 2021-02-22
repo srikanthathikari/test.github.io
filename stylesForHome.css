@@ -1,0 +1,152 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin: 0%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(9,1fr);
+    grid-template-areas:
+    "nv nv"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc"
+    "bc bc";
+}
+.navbar{
+    grid-area: nv;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: start;
+}
+.HeaderButtons{
+    margin-right: 5vw;
+    color: wheat;
+}
+
+#title{
+    margin-left: 30%;
+    margin-right: 50%;
+}
+.bodycontent{
+    grid-area: bc; 
+    background-color: burlywood;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "bks pls"
+    "ptg msc";
+    grid-gap:10px;
+
+}
+
+
+#books{
+    grid-area: bks;
+    background-color: brown;
+
+}
+#places{
+    grid-area: pls;
+    background-color: aqua;
+}
+#photography{
+    grid-area: ptg;
+    background-color: blueviolet;
+
+}
+#music{
+    grid-area: msc;
+    background-color: violet;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+}
+.HeaderButtons{
+    margin-right: 5vw;
+    color: wheat;
+}
+#title{
+    margin-left: 30%;
+    margin-right: 50%;
+}
+
+.container{
+    margin-top: 1vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    grid-gap:30px;
+    grid-template-areas:
+    "bks pls"
+    "ptg msc";
+}
+
+#books{
+    grid-area: bks;
+    background-color: brown;
+
+}
+#places{
+    grid-area: pls;
+    background-color: aqua;
+}
+#photography{
+    grid-area: ptg;
+    background-color: blueviolet;
+
+}
+#music{
+    grid-area: msc;
+    background-color: violet;
+}
+
+
+
+ */
