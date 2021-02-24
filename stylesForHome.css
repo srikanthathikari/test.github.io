@@ -1,16 +1,21 @@
+
+
 html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
   margin: 0%;
+  color: wheat;
+
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: repeat(9,1fr);
+    grid-template-rows: repeat(11,1fr);
     grid-template-areas:
     "nv nv"
+    "bc bc"
     "bc bc"
     "bc bc"
     "bc bc"
@@ -22,13 +27,11 @@ body {
     "bc bc";
 }
 .navbar{
-    grid-area: nv;
-    background-color: black;
-    height: 10vh;
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    justify-content: start;
+    grid-area: nv;
+    background-color: #007791;
+    height: 10vh;
+
 }
 .HeaderButtons{
     margin-right: 5vw;
@@ -43,11 +46,13 @@ body {
     grid-area: bc; 
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "bks pls"
-    "ptg msc";
-    grid-gap:10px;
+    "next next";
+    grid-gap:1px;
+    border-top: 1px white solid;;
+    background-color:darkseagreen;
 }
 
 .booksGrid{
@@ -56,21 +61,41 @@ body {
     grid-template-columns: auto auto auto;
     grid-gap:15px;
     justify-content: space-evenly;
+    border: 1px white solid;
+}
+.placesGrid{
+    display: grid;
+    grid-area: pls;
+    grid-template-columns: auto auto auto;
+    grid-gap:15px;
+    justify-content: space-evenly; 
+    border: 1px white solid;
+
 }
 .booksGrid > img{
     height: 150px;
     width: 95px;
 }
-
-#places{
-    grid-area: pls;
-   
+.placesGrid > img {
+    height: 150px;
+    width: 150px;
 }
 #photography{
     grid-area: ptg;
 }
 #music{
     grid-area: msc;
+}
+
+.pageNavigation{
+    grid-area: next;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  
+}
+#page2 {
+    color: black;
 }
 
 
