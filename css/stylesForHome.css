@@ -12,6 +12,11 @@ body {
   color: wheat;
 }
 
+figcaption{
+  color: black;
+  font-weight: bolder;
+}
+
 @media(min-width:600px){
     .container {
         display: grid;
@@ -35,18 +40,18 @@ body {
         border-top: 1px white solid;
         background-color: darkseagreen;
       }
-      .booksGrid > img {
+      .booksGrid > figure > img {
         height: 50vh;
         width: 25vw;
       }
-      .placesGrid > img {
+      .placesGrid > figure > img {
         height: 50vh;
         width: 30vw;
       }
       .booksGrid {
         display: grid;
         grid-area: bks;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 15px;
         justify-content: space-evenly;
         border: 1px white solid;
@@ -54,7 +59,7 @@ body {
       .placesGrid {
         display: grid;
         grid-area: pls;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 15px;
         justify-content: space-evenly;
         border: 1px white solid;
@@ -90,7 +95,7 @@ body {
   .bodycontent {
     display: grid;
     grid-area: bc;
-    height: 100vh;
+    height: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
@@ -100,11 +105,11 @@ body {
     border-top: 1px white solid;
     background-color: darkseagreen;
   }
-  .booksGrid > img {
+  .booksGrid > figure > img {
     height: 150px;
     width: 95px;
   }
-  .placesGrid > img {
+  .placesGrid > figure > img {
     height: 150px;
     width: 150px;
   }

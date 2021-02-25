@@ -39,7 +39,7 @@
   .booksGrid {
     display: grid;
     grid-area: bks;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto ;
     grid-gap: 15px;
     justify-content: space-evenly;
     border: 1px white solid;
@@ -47,26 +47,20 @@
   .placesGrid {
     display: grid;
     grid-area: pls;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-gap: 15px;
     justify-content: space-evenly;
     border: 1px white solid;
   }
-  .booksGrid > img {
+  .booksGrid > figure > img {
     height: 50vh;
     width: 40vw;
   }
-  .placesGrid > img {
+   .placesGrid > figure > img {
     height: 50vh;
     width: 40vw;
   }
   
-  #photography {
-    grid-area: ptg;
-  }
-  #music {
-    grid-area: msc;
-  }
   .pageNavigation {
     grid-area: next;
     display: flex;
