@@ -1,0 +1,57 @@
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "nv"
+    "bc2";
+}
+.bodycontent2 {
+  display: grid;
+  grid-area: bc2;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "pb"
+  "msc"
+  "next";
+  grid-gap: 1px;
+  border-top: 1px white solid;
+  background-color: darkseagreen;
+}
+  .photoBook > img {
+  height: 80vh;
+  width: 35vw;
+}
+.musicGrid > audio {
+  height: 10vh;
+  width: 25vw;
+}
+.photoBook {
+  display: grid;
+  grid-area: pb;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  justify-content: space-evenly;
+  border: 1px white solid;
+}
+.musicGrid {
+  display: grid;
+  grid-area: msc;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  justify-content: space-evenly;
+  border: 1px white solid;
+}
+.pageNavigation2 {
+  grid-area: next;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  height: 10vh;
+}
+#page2 {
+  color: black;
+}

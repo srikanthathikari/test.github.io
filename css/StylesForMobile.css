@@ -1,0 +1,78 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "nv"
+      "bc";
+  }
+  .navbar {
+    display: flex;
+    grid-area: nv;
+    background-color: #007791;
+    height: 10vh;
+  }
+  .HeaderButtons {
+    margin-right: 5vw;
+    color: wheat;
+  }
+  
+  #title {
+    margin-left: 30%;
+  }
+  .bodycontent {
+    display: grid;
+    grid-area: bc;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "bks"
+      "pls"
+      "next";
+    grid-gap: 1px;
+    border-top: 1px white solid;
+    background-color: darkseagreen;
+  }
+  
+  .booksGrid {
+    display: grid;
+    grid-area: bks;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    justify-content: space-evenly;
+    border: 1px white solid;
+  }
+  .placesGrid {
+    display: grid;
+    grid-area: pls;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    justify-content: space-evenly;
+    border: 1px white solid;
+  }
+  .booksGrid > img {
+    height: 50vh;
+    width: 40vw;
+  }
+  .placesGrid > img {
+    height: 50vh;
+    width: 40vw;
+  }
+  
+  #photography {
+    grid-area: ptg;
+  }
+  #music {
+    grid-area: msc;
+  }
+  .pageNavigation {
+    grid-area: next;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+  }
+  #page2 {
+    color: black;
+  }
