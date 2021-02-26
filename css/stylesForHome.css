@@ -29,6 +29,7 @@ figcaption{
   color: black;
   font-weight: bolder;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 @media(min-width:600px){
