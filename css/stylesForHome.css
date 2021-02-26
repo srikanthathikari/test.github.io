@@ -12,9 +12,17 @@ body {
   color: wheat;
 }
 
+.navbar{
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+
 figcaption{
   color: black;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 @media(min-width:600px){
@@ -77,9 +85,10 @@ figcaption{
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     grid-template-areas:
       "nv nv"
+      "bc bc"
       "bc bc"
       "bc bc"
       "bc bc"
