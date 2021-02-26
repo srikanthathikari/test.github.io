@@ -2,6 +2,7 @@
 @import '../css/StylesForMobile.css';
 @import '../css/page2Home.css';
 @import '../css/page2Mobile.css';
+@import '../css/Blog.css';
 
 html {
   font-family: "Source Sans Pro", sans-serif;
@@ -10,9 +11,14 @@ html {
 body {
   margin: 0%;
   color: wheat;
+  background-color: darkseagreen;
 }
 
 .navbar{
+  display: flex;
+  grid-area: nv;
+  background-color: #007791;
+  height: 10vh;
   overflow: hidden;
   position: fixed; 
   top: 0;
@@ -46,9 +52,9 @@ figcaption{
           "next";
         grid-gap: 1px;
         border-top: 1px white solid;
-        background-color: darkseagreen;
       }
       .booksGrid > figure > img {
+        margin-top: 5vh;
         height: 50vh;
         width: 25vw;
       }
