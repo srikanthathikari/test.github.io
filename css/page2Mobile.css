@@ -24,7 +24,7 @@
       border-top: 1px white solid;
       background-color: darkseagreen;
     }
-    .photoBook > img {
+    .photoBook > figure > img {
       height: 80vh;
       width: 70vw;
     }
