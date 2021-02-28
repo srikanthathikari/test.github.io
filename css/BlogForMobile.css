@@ -21,13 +21,13 @@
         width: 60vw;
         align-items: center;
         margin-left: 2vw;
-        margin-right:2vw;
+        margin-right:4vw;
         font-size: 20px;
         height: fit-content;
       }
       .wib{
         margin-left: 2vw;
-        margin-right:2vw;
+        margin-right:4vw;
         grid-area: wib;
         border: black 3px solid;
         width: 60vw;
@@ -85,12 +85,12 @@
         color: black;
         margin: 12vh;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
-        "pf pf"
-        "wib wib"
-        "wib wib";
+        "pf pf pf"
+        "wib wib wib"
+        "wib wib wib";
       }
       
       .profile{
@@ -100,13 +100,13 @@
         border: black 3px solid;
         width: 60vw;
         align-items: center;
-        margin-left: 8vw;
+        margin-left: 2vw;
         margin-right:4vw;
         font-size: 20px;
         height: fit-content;
       }
       .wib{
-        margin-left: 8vw;
+        margin-left: 2vw;
         margin-right:4vw;
         grid-area: wib;
         border: black 3px solid;
