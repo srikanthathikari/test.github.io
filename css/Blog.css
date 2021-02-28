@@ -1,8 +1,74 @@
-p {
-    color: black;
+.BlogContainer{
+  color: black;
+  margin: 12vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7,1fr);
+  grid-template-areas: 
+  "pf pf pf wib wib wib wib"
+  "pf pf pf wib wib wib wib"
+  "pf pf pf wib wib wib wib"
+  "pf pf pf wib wib wib wib"
+  "pf pf pf wib wib wib wib"
+  "pf pf pf wib wib wib wib";
 }
 
-.wib9{
-
-    color: black;
+.profile{
+  grid-area: pf;
+  display: flex;
+  flex-direction: column;
+  border: black 3px solid;
+  width: 400px;
+  align-items: center;
+  margin-left: 20vpx;
+  margin-right:20px;
+  font-size: 20px;
 }
+.wib{
+  grid-area: wib;
+  border: black 3px solid;
+}
+.wib > p{
+  font-size: 20px;
+}
+.socialMedia{
+  display: flex;
+  flex-direction: column;
+  border: black 3px solid;
+  align-items: center;
+  background-color: tomato;
+  padding-bottom: 20px;
+
+}
+button{
+  background-color: black;
+  color: white;
+  height: 10vh;
+  width: 10vh;
+  border-radius: 20px;
+}
+.buttonA{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.fab{
+  margin-right: 40px;
+}
+.bio{
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#avatar{
+  height: 400px;
+  width:  400px;
+  
+}
+p{
+  font-weight: bolder;
+}
+

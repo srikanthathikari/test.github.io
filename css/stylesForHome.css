@@ -3,6 +3,7 @@
 @import '../css/page2Home.css';
 @import '../css/page2Mobile.css';
 @import '../css/Blog.css';
+@import '../css/BlogForMobile.css';
 
 html {
   font-family: "Source Sans Pro", sans-serif;
