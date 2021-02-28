@@ -6,6 +6,8 @@
         margin: 12vh;
         display: grid;
         grid-template-columns: 1fr;
+        flex-direction: row;
+        justify-content: center;
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
         "pf"
@@ -20,13 +22,13 @@
         border: black 3px solid;
         width: 60vw;
         align-items: center;
-        margin-left: 2vw;
+        margin-left: 4vw;
         margin-right:4vw;
         font-size: 20px;
         height: fit-content;
       }
       .wib{
-        margin-left: 2vw;
+        margin-left: 4vw;
         margin-right:4vw;
         grid-area: wib;
         border: black 3px solid;
@@ -85,6 +87,8 @@
         color: black;
         margin: 12vh;
         display: grid;
+        flex-direction: row;
+        justify-content: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3,1fr);
         grid-template-areas: 
@@ -100,14 +104,14 @@
         border: black 3px solid;
         width: 60vw;
         align-items: center;
-        margin-left: 2vw;
-        margin-right:4vw;
+        margin-left: 3vw;
+        margin-right:1vw;
         font-size: 20px;
         height: fit-content;
       }
       .wib{
-        margin-left: 2vw;
-        margin-right:4vw;
+        margin-left: 3vw;
+        margin-right:1vw;
         grid-area: wib;
         border: black 3px solid;
         width: 60vw;
